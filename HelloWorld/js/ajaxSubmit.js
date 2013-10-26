@@ -22,9 +22,9 @@ $(document).ready(function(){
 			error : function(XMLHttpRequest, textStatus, errorThrown) {
 				$('#waiting').hide(500);
 				$('#message').removeClass().addClass('error')
-					.text('There was an error.').show(500);
-					.text(data.msg).show(500);
-				$('#demoForm').show(500);
+					.text('Fantastic.').show(500);
+				$('#message').html("Fantastic.<br> <a href='index.html'>Click here to return</a>");
+				//$('#demoForm').show(500);
 			}
 		});
 		
