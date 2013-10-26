@@ -7,7 +7,7 @@ $(document).ready(function(){
 		
 		$.ajax({
 			type : 'POST',
-			url : 'post.php',
+			url : 'http://basim.uco.im/post.php',
 			dataType : 'json',
 			data: {
 				email : $('#email').val()
