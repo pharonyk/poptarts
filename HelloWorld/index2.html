@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Ajax submit</title>
+        <link href="css/main.css" type="text/css" media="screen, projection" rel="stylesheet" />
+    </head>
+  
+    <body>
+        <div id="wrapper">
+            <div id="message" style="display: none;">
+            </div>
+            <div id="waiting" style="display: none;">
+                MAKING THINGS HAPPEN. HANG ON...<br />
+                <img src="images/ajax-loader.gif" title="Loader" alt="Loader" />
+            </div>
+            <form action="" id="demoForm" method="post">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <span style="font-size: 0.9em;">Please enter your email to subscribe to my worthless newsletter.</span>
+                    <p>
+                        <label for="email">E-Mail:</label>
+                        <input type="text" name="email" id="email" value="" />
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" id="submit" style="float: right; clear: both; margin-right: 3px;" value="Submit" />
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/ajaxSubmit.js"></script>
+    </body>
+</html>
