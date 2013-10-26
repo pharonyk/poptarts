@@ -7,7 +7,7 @@ if (empty($_POST['email'])) {
 }
 else {
 	$return['error'] = false;
-	$return['msg'] = 'You\'re email ' . $_POST['email'] . ' has been subscribed!';
+	$return['msg'] = 'Your email ' . $_POST['email'] . ' has been subscribed!';
 	
 	
 
