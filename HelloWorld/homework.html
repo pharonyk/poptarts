@@ -8,8 +8,18 @@
 		<link rel="stylesheet" href="./jquery.mobile.structure-1.3.2.min.css" />
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+		
+		<script type="text/javascript" src="js/cordova.js"></script>	
+		<script type="text/javascript" src="js/cordova.android.js"></script>	
+		
 		<script type="text/javascript" src="js/ajaxSubmit.js"></script>	
 		
+		<script>
+		var video = document.getElementById('video');
+			video.addEventListener('click',function(){
+			  video.play();
+			},false);
+		</script>
 		
 	<!--HTML5-Javascript Homework by Basim Darwish
 		Programming Languages
@@ -85,8 +95,8 @@
 
 <h1>Video:</h1>	
 <video width="320" height="240" controls>
-  <source src="http://www.w3schools.com/html/movie.mp4" type="video/mp4">
-  <source src="http://www.w3schools.com/html/movie.ogg" type="video/ogg">
+  <source src="./media/movie.mp4" type="video/mp4">
+  <source type="video/webm" src="./media/movie.webm" /> 
   Your browser does not support the video tag.
 </video>
 
